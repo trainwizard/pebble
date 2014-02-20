@@ -1,0 +1,9 @@
+
+
+$("ceoDisplay").innerHTML = cleanUpResponse(myRequest.responseText);
+
+function timer() {
+clearTimeout(time);
+time = setTimeout("search()",500);
+console.log(time);
+}

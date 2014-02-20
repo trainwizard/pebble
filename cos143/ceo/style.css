@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+	font-family: Comic Sans;
+}
+a{
+	font-family: Comic Sans;
+	color: None;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20;
+}
+html{	
+	background-color: Grey;
+}
+#header{
+	height: 4em;
+	//margin-left: 30%;
+	//margin-right: 30%;
+	background-color: #FD3F49;
+	//border-radius: 20px;
+	text-align: center;
+}
+#content{
+	text-align: center;
+	margin-left: 30%;
+	margin-right: 30%;
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: Grey;
+	//border-radius: 20px;
+}
+.forms{
+	text-align: center;
+	margin-left: 100px;
+}
+#delButtons input{
+	text-align: center;
+	width: 150px;
+}

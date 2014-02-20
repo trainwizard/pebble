@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>Login</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+        <script src="search.js"></script>
+	</head>
+	<body>
+		<br>
+		<div id="header">
+			<br>
+			<a href="settings.html">My Settings</a><span id="signupMenu">      <a href="register.html">Register</a></span>      <span id="loginMenu"><a href="login.html">Log In</a></span> <span style="font-weight:bold">Search</span><span id="signupMenu">
+		</div>
+		<br>
+		<br>
+		<div id="content">
+			<div class="search">
+              
+              <form name="form1" method="post" action="">
+                <input type="radio" name="radio" id="name" value="name">
+                <label for="name">Name</label>
+                <input type="radio" name="radio" id="industry" value="industry">
+                <label for="industry">Industry</label>
+                <input type="radio" name="radio" id="location" value="location">
+                <label for="location">Location</label>
+              </form>
+              <p>
+                <input name="text" type="text" id="text" value="" />
+                <input name="search" type="button" id="search" value="search" />
+              </p>
+			</div>
+			<div id="infoDisplay">
+			
+			</div>
+			<div id="ceoDisplay">
+			
+			</div>
+			
+		</div>
+		<br>
+	</body>
+</html>
