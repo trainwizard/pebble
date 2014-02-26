@@ -3,8 +3,8 @@
 
 (defun prove? (target facts rules)
     (if (member target facts)
-	T
-	((null target) nil)
+	T)
+	(((null target) nil)
 	((listp target) (cond ((eql 'and (car target)) (lookUpAll(cdr target) facts rules))
 							 ((eql 'or (car target)) (lookUpPart (cdr target) facts rules))
 							 ((eql 'not (car target)) (not (prove?(cdr target) facts rules)))
