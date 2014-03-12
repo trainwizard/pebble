@@ -33,4 +33,3 @@
     ((OR (NOT B) A) F)
     ((F) G) ))
 
-(prove? 'a facts rules)
