@@ -3,8 +3,8 @@
 
 (defun prove? (target facts rules)
     (if (member target facts)
-	T
-	((null target) nil)
+	T)
+	(((null target) nil)
 	((listp target) (cond ((eql 'and (car target)) (lookUpAll(cdr target) facts rules))
 							 ((eql 'or (car target)) (lookUpPart (cdr target) facts rules))
 							 ((eql 'not (car target)) (not (prove?(cdr target) facts rules)))
@@ -33,4 +33,8 @@
     ((OR (NOT B) A) F)
     ((F) G) ))
 
+<<<<<<< HEAD
 (prove? 'a facts rules)
+=======
+(prove? 'a facts rules)
+>>>>>>> 7dc0de08e08088dffcc5370039d7790663fc7b8e
