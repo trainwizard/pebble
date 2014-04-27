@@ -125,5 +125,5 @@
   statement
   )
 
-(mission-statement)
+
 ;(format t "~a~%" (mission-statement))
