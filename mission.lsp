@@ -1,19 +1,25 @@
-
+;Sam Bolds
+;Random Mission Statement Generator
+;Completed April 27th 2014
 
 (setf *random-state* (make-random-state t)) ;important!!!
 
-(setq intro '("It is our business to " 
-"It is our job to "
-"It is our mission to "
-"It is our responsibility to "
-"Our goal is to "
-"It is our mission to continue to "
-"Our customers can count on us to "
-"We strive to "
-"We will "
-"We are committed to "
-"We exist to "
-"It is our vision to ") )
+(setq intro '(“Our company strives to ”
+“Our corporation will “
+“It is our mission to “
+“We exist to “
+“Our company is dedicated to “
+“Our business’ mission is to “
+“Our organization inspires to “
+“We endeavor to “
+“It is our job to “
+“We seek to “
+“We work to “
+“We compete to “
+“Our vision is to “
+“Our business makes every effort to “
+“Our organization contends to “
+) )
 (setq adverb '("appropriately "
 "assertively "
 "authoritatively "
@@ -179,92 +185,84 @@
 "virtual " 
 "world-class " 
 "worldwide ") )
-(setq noun '("outside the box "
-"thinking "
-"action items "
-"alignments "
-"benefits "
-"best practices "
-"catalysts for change "
-"collaboration and idea-sharing "
-"content "
-"core competencies "
-"customer service "
-"data "
-"deliverables "
-"e-business "
-"expertise "
+(setq noun '(“achievements “
+“accomplishments “
+“aid “
+“applied science “
+“automation “
+“benefits “
+“catalysts for change “
+“content “ 
+“data “
+“deliverables “
+“education “
+“greater good “
 "growth strategies "
+“high tech “
 "human capital "
-"ideas "
-"imperatives "
-"information "
-"infrastructures "
-"initiatives "
-"innovation "
-"intellectual capital "
-"internal or organic sources "
-"leadership "
-"leadership skills "
+“industrial science “
+“information “
+“infrastructures “
+“intellectual capital “
+“knowledge “
+“leadership skills “
 "manufactured products "
 "materials "
+“mechanization “
 "meta-services "
-"methods of empowerment "
-"metrics "
-"niche markets "
-"opportunities "
-"paradigms "
-"potentialities "
-"process improvements "
-"processes "
-"products "
-"quality vectors "
-"resources "
-"results "
+“lifelong learning “
+“materials “
+“meta-services “
+“methods “
+“methods of empowerment “
+“mindshare “
+“opportunities “
+“output “
+“paradigms “
+“power “
+“products “
+“resources “
+“results “
 "scenarios "
-"services "
-"solutions "
-"sources "
-"strategic theme areas "
-"supply chains "
-"synergy "
-"technology "
-"testing procedures "
-"total linkage "
-"value ") )
-(setq conjunction '("and "
-"and also " 
-"and continue " 
-"as well as " 
-"in order that we may continue "
-"in order " 
-"so that we may continue " 
-"so that we may endeavour " 
-"such that we may continue " 
-"to allow us "
-"and continuing ") )
-(setq close '("to approach our jobs with passion and commitment"
-"because that is what the customer expects"
-"to bring global peace"
-"for 100% customer satisfaction"
-"to solve business problems"
-"to perpetuate an eternal Christmas"
-"so that we can deliver the kind of results on the bottom line that our investors expect and deserve"
-"so that our customers will survive the apocalypse"
-"through continuous improvement"
-"to be the best in the world"
-"to delight the customer"
-"to exceed customer expectations"
-"to meet our customer's needs"
-"to satisfy our internal and external customers"
-"to set us apart from the competition"
-"to stay competitive in tomorrow's world"
-"to help any visiting alien life forms"
-"while maintaining the highest standards"
-"while promoting personal employee growth"
-"while striving for technical leadership"
-"with 100% on-time delivery"
-"with zero defects") )
+“services “
+“solutions “
+“sources “
+“statistics “
+“support “
+“technology “) )
+(setq conjunction '(“and “
+“and so “
+“and so that “
+“so that we may “
+“so that we may continue “
+“so that we may go on “
+“so that we may maintain “
+“so that we may progress “
+“along with “
+“including “
+“as well as “
+“also “
+“furthermore “) )
+(setq close '(“to give the customer what they deserve.”
+“to bring 100% satisfaction.”
+“to perpetuate learning.”
+“to insure we deliver the kind of results that our investors expect and deserve.”
+“through continual improvement.”
+“to protect and enhance our customer experience.”
+“to maximize sharing and innovation.”
+“so that we will enrich the customer experience.”
+“to improve the quality of customer experience.”
+“to prepare the world.”
+“to create an innovative world.”
+“to work in partnership to create an informed public.”
+“to enable the education of the next generation.”
+“to meet our customer expectations.”
+“to exceed customer’s needs.”
+“to set us apart from our competitors.”
+“with zero defects.”
+“while promoting personal leadership.”
+“while maintaining zero defects.”
+“while striving for 100% on-time delivery.”) )
 
 (defun selectTerm (lst)
 	(nth (random (length lst)) lst) )
