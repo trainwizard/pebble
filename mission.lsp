@@ -4,22 +4,21 @@
 
 (setf *random-state* (make-random-state t)) ;important!!!
 
-(setq intro '(“Our company strives to ”
-“Our corporation will “
-“It is our mission to “
-“We exist to “
-“Our company is dedicated to “
-“Our business’ mission is to “
-“Our organization inspires to “
-“We endeavor to “
-“It is our job to “
-“We seek to “
-“We work to “
-“We compete to “
-“Our vision is to “
-“Our business makes every effort to “
-“Our organization contends to “
-) )
+(setq intro '("Our company strives to "
+"Our corporation will "
+"It is our mission to "
+"We exist to "
+"Our company is dedicated to "
+"Our business’ mission is to "
+"Our organization inspires to "
+"We endeavor to "
+"It is our job to "
+"We seek to "
+"We work to "
+"We compete to "
+"Our vision is to "
+"Our business makes every effort to "
+"Our organization contends to ") )
 (setq adverb '("appropriately "
 "assertively "
 "authoritatively "
@@ -185,84 +184,85 @@
 "virtual " 
 "world-class " 
 "worldwide ") )
-(setq noun '(“achievements “
-“accomplishments “
-“aid “
-“applied science “
-“automation “
-“benefits “
-“catalysts for change “
-“content “ 
-“data “
-“deliverables “
-“education “
-“greater good “
+(setq noun '("achievements "
+"accomplishments "
+"aid "
+"applied science "
+"automation "
+"benefits "
+"catalysts for change "
+"content " 
+"data "
+"deliverables "
+"education "
+"greater good "
 "growth strategies "
-“high tech “
+"high tech "
 "human capital "
-“industrial science “
-“information “
-“infrastructures “
-“intellectual capital “
-“knowledge “
-“leadership skills “
+"industrial science "
+"information "
+"infrastructures "
+"intellectual capital "
+"knowledge "
+"leadership skills "
 "manufactured products "
 "materials "
-“mechanization “
+"mechanization "
 "meta-services "
-“lifelong learning “
-“materials “
-“meta-services “
-“methods “
-“methods of empowerment “
-“mindshare “
-“opportunities “
-“output “
-“paradigms “
-“power “
-“products “
-“resources “
-“results “
+"lifelong learning "
+"materials "
+"meta-services "
+"methods "
+"methods of empowerment "
+"mindshare "
+"opportunities "
+"output "
+"paradigms "
+"power "
+"products "
+"resources "
+"results "
 "scenarios "
-“services “
-“solutions “
-“sources “
-“statistics “
-“support “
-“technology “) )
-(setq conjunction '(“and “
-“and so “
-“and so that “
-“so that we may “
-“so that we may continue “
-“so that we may go on “
-“so that we may maintain “
-“so that we may progress “
-“along with “
-“including “
-“as well as “
-“also “
-“furthermore “) )
-(setq close '(“to give the customer what they deserve.”
-“to bring 100% satisfaction.”
-“to perpetuate learning.”
-“to insure we deliver the kind of results that our investors expect and deserve.”
-“through continual improvement.”
-“to protect and enhance our customer experience.”
-“to maximize sharing and innovation.”
-“so that we will enrich the customer experience.”
-“to improve the quality of customer experience.”
-“to prepare the world.”
-“to create an innovative world.”
-“to work in partnership to create an informed public.”
-“to enable the education of the next generation.”
-“to meet our customer expectations.”
-“to exceed customer’s needs.”
-“to set us apart from our competitors.”
-“with zero defects.”
-“while promoting personal leadership.”
-“while maintaining zero defects.”
-“while striving for 100% on-time delivery.”) )
+"services "
+"solutions "
+"sources "
+"statistics "
+"support "
+"technology ") )
+(setq conjunction '("and "
+"and so "
+"and so that "
+"so that we may "
+"so that we may continue "
+"so that we may go on "
+"so that we may maintain "
+"so that we may progress "
+"along with "
+"including "
+"as well as "
+"also "
+"furthermore ") )
+
+(setq close '("to give the customer what they deserve."
+"to bring 100% satisfaction."
+"to perpetuate learning."
+"to insure we deliver the kind of results that our investors expect and deserve."
+"through continual improvement."
+"to protect and enhance our customer experience."
+"to maximize sharing and innovation."
+"so that we will enrich the customer experience."
+"to improve the quality of customer experience."
+"to prepare the world."
+"to create an innovative world."
+"to work in partnership to create an informed public."
+"to enable the education of the next generation."
+"to meet our customer expectations."
+"to exceed customer’s needs."
+"to set us apart from our competitors."
+"with zero defects."
+"while promoting personal leadership."
+"while maintaining zero defects."
+"while striving for 100% on-time delivery.") )
 
 (defun selectTerm (lst)
 	(nth (random (length lst)) lst) )

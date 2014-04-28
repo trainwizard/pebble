@@ -9,7 +9,7 @@
 <?php
     print "testing clisp interface ...<br>\n";
     $results = '';
-    $fp = popen("/usr/local/bin/clisp ./missionh.lsp", "r");
+    $fp = popen("/usr/local/bin/clisp ./mission.lsp", "r");
     $results .= fread($fp, 1024);
     pclose($fp);
 
